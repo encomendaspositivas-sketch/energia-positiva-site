@@ -25,3 +25,9 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fffaf3;color:#2
 .admin-product-row img,.admin-thumb-empty{width:72px;height:72px;border-radius:16px;object-fit:cover;background:#f3e8ff}
 .admin-product-row p{margin:5px 0;color:#7e22ce;font-weight:700}
 @media(max-width:650px){.admin-grid-2{grid-template-columns:1fr}.admin-top{flex-direction:column}.admin-secondary,.admin-danger{margin:8px 0 0;width:100%}.admin-form button{width:100%;margin-top:8px}}
+
+
+/* Admin Mobile Produtos V4.2 */
+.admin-photo-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0 16px}
+.hidden-file-input{display:none!important}
+@media(max-width:650px){.admin-photo-actions{grid-template-columns:1fr}.admin-photo-actions button{width:100%;margin:0!important}}
