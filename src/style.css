@@ -47,3 +47,35 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fffaf3;color:#2
   object-fit:contain;
   background:#fffaf3;
 }
+
+
+/* V4.5 anti encomendas duplicadas */
+body.order-submitting button,
+body.order-submitting .checkout button,
+body.order-submitting .cart button{
+  pointer-events:none;
+}
+
+body.order-submitting button[type="submit"],
+body.order-submitting .checkout button,
+body.order-submitting .cart button{
+  opacity:.65;
+  cursor:not-allowed;
+}
+
+body.order-submitting button[type="submit"]::after{
+  content:"";
+  width:14px;
+  height:14px;
+  border:2px solid currentColor;
+  border-top-color:transparent;
+  border-radius:50%;
+  display:inline-block;
+  margin-left:8px;
+  vertical-align:-2px;
+  animation:spin-order .8s linear infinite;
+}
+
+@keyframes spin-order{
+  to{transform:rotate(360deg)}
+}
