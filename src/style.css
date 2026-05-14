@@ -210,3 +210,18 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fffaf3;color:#2
     padding:0 8px;
   }
 }
+
+
+/* V4.9.4 subtexto comercial */
+#produtos .category-intro{
+  font-size:16px;
+  font-weight:700;
+  color:#7e22ce;
+  opacity:.92;
+  max-width:720px;
+}
+@media(max-width:760px){
+  #produtos .category-intro{
+    font-size:14.5px;
+  }
+}
