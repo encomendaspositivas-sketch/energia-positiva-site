@@ -290,3 +290,29 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fffaf3;color:#2
     max-width:100%;
   }
 }
+
+
+/* V4.9.7 titulo curto categorias */
+#produtos .section-title{
+  font-size:clamp(34px,3.5vw,52px);
+  line-height:1.12;
+  max-width:960px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+#produtos .category-intro{
+  display:none;
+}
+
+#produtos .category-buttons{
+  margin-top:24px;
+}
+
+@media(max-width:760px){
+  #produtos .section-title{
+    font-size:clamp(28px,7.2vw,40px);
+    line-height:1.14;
+  }
+}
