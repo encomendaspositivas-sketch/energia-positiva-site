@@ -51,3 +51,124 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fffaf3;color:#2
 
 /* V4.6.1 contador privado */
 /* Não existe contador visual no site público. O tracking é invisível. */
+
+
+/* V4.8 produtos paginados e egress otimizado */
+.products-status,
+.products-error,
+.products-end{
+  margin:18px auto;
+  text-align:center;
+  font-weight:900;
+  color:#581c87;
+}
+.products-error{
+  background:#fff1f2;
+  border:1px solid #fecdd3;
+  color:#be123c;
+  border-radius:18px;
+  padding:12px;
+}
+.load-more-wrap{
+  display:flex;
+  justify-content:center;
+  margin-top:26px;
+}
+.load-more-btn:disabled{
+  opacity:.65;
+  cursor:not-allowed;
+}
+.product-image img{
+  content-visibility:auto;
+}
+
+
+/* V4.9 categorias primeiro / egress otimizado */
+.category-intro{
+  max-width:760px;
+  margin:0 auto 18px;
+  text-align:center;
+  color:#6b21a8;
+  font-weight:800;
+}
+.category-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  margin:22px auto 24px;
+}
+.category-buttons button{
+  border:1px solid #d8b4fe;
+  background:#fff;
+  color:#581c87;
+  border-radius:999px;
+  padding:12px 16px;
+  font-weight:900;
+  box-shadow:0 10px 24px #7e22ce12;
+}
+.category-buttons button.active,
+.category-buttons button:hover{
+  background:#581c87;
+  color:#fff;
+}
+.category-loading{
+  color:#7e22ce;
+  font-weight:900;
+  padding:12px 16px;
+}
+.selected-products-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+  margin:20px 0;
+}
+.selected-products-head h3{
+  margin:0;
+  font-size:28px;
+  color:#2b0a3d;
+}
+.selected-products-head p{
+  margin:4px 0 0;
+  color:#7e22ce;
+  font-weight:900;
+}
+.search-wrap.compact{
+  max-width:360px;
+  min-width:260px;
+}
+.products-status,
+.products-error,
+.products-end{
+  margin:18px auto;
+  text-align:center;
+  font-weight:900;
+  color:#581c87;
+}
+.products-error{
+  background:#fff1f2;
+  border:1px solid #fecdd3;
+  color:#be123c;
+  border-radius:18px;
+  padding:12px;
+}
+.load-more-wrap{
+  display:flex;
+  justify-content:center;
+  margin-top:26px;
+}
+.load-more-btn:disabled{
+  opacity:.65;
+  cursor:not-allowed;
+}
+@media(max-width:760px){
+  .selected-products-head{
+    align-items:stretch;
+    flex-direction:column;
+  }
+  .search-wrap.compact{
+    max-width:100%;
+    min-width:0;
+  }
+}
