@@ -268,3 +268,25 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fffaf3;color:#2
     font-size:13px;
   }
 }
+
+
+/* V4.9.6 titulo categorias equilibrado */
+#produtos .section-title{
+  font-size:clamp(40px,4.3vw,64px);
+  line-height:1.06;
+  max-width:920px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#produtos .category-intro{
+  margin-top:12px;
+  margin-bottom:24px;
+}
+
+@media(max-width:760px){
+  #produtos .section-title{
+    font-size:clamp(30px,8vw,44px);
+    max-width:100%;
+  }
+}
