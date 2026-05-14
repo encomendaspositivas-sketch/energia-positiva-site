@@ -316,3 +316,18 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fffaf3;color:#2
     line-height:1.14;
   }
 }
+
+
+/* V5.0 admin produtos otimizado */
+.admin-help{margin:6px 0 16px;color:#6b21a8;font-weight:800;line-height:1.45}
+.admin-search-row{display:grid;grid-template-columns:1.2fr 1fr auto;gap:10px;align-items:center}
+.admin-search-row input,.admin-search-row select{width:100%;box-sizing:border-box;border:1px solid #d8b4fe;border-radius:16px;padding:12px 14px;font-weight:800;color:#2b0a3d;background:#fff}
+.admin-quick-filters{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
+.admin-quick-filters button{border:1px solid #d8b4fe;background:#fff;color:#581c87;border-radius:999px;padding:10px 14px;font-weight:900}
+.admin-quick-filters button.active{background:#581c87;color:#fff}
+.admin-empty{margin-top:16px;background:#fffaf3;border:1px solid #eadcff;color:#581c87;border-radius:18px;padding:18px;text-align:center;font-weight:900}
+.admin-thumb{width:78px;height:78px;border-radius:18px;overflow:hidden;background:#fffaf3;border:1px solid #eadcff;flex:0 0 auto}
+.admin-thumb img{width:100%;height:100%;object-fit:contain;background:#fffaf3}
+.admin-product-row{display:grid;grid-template-columns:78px 1fr auto;gap:14px;align-items:center}
+.admin-row-actions{display:flex;gap:8px}.admin-row-actions .danger{background:#be123c}
+@media(max-width:760px){.admin-search-row{grid-template-columns:1fr}.admin-product-row{grid-template-columns:64px 1fr}.admin-thumb{width:64px;height:64px}.admin-row-actions{grid-column:1/-1}}
